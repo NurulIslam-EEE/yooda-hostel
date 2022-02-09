@@ -1,23 +1,18 @@
-import logo from './logo.svg';
+
 import './App.css';
+import AddFood from './components/addFood/AddFood';
+import AddStudent from './components/addStudent/AddStudent';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import DistributionList from './components/DistributionList/DistributionList';
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="row">
+      <AddFood />
+      <AddStudent />
+      <DistributionList />
+
     </div>
   );
 }
