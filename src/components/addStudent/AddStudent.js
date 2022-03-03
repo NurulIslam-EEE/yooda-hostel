@@ -25,7 +25,7 @@ const AddStudent = () => {
         reset()
     };
     return (
-        <div className="col-md-4 text-center">
+        <div className="col-md-12 text-center">
             <h3>Add Student</h3>
             <form onSubmit={handleSubmit(onSubmit)}>
                 <input placeholder='studentId' {...register("studentId", { required: true })} /> <br />

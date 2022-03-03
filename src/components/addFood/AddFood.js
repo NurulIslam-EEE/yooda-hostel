@@ -23,7 +23,7 @@ const AddFood = () => {
             })
     };
     return (
-        <div className="col-md-4 text-center">
+        <div className="col-md-12 text-center">
             <h3>Add Food</h3>
             <form onSubmit={handleSubmit(onSubmit)}>
                 <input placeholder='foodId' {...register("foodId", { required: true })} /> <br />
